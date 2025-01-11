@@ -2,5 +2,5 @@
 name = "deptry-pre-commit"
 version = "0.0.0"
 dependencies = [
-    "deptry==0.21.2",
+    "deptry==0.22.0",
 ]
