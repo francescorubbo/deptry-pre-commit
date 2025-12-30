@@ -5,10 +5,14 @@ on:
   schedule:
   - cron: '30 8 * * *'
 
+permissions: {}
+
 jobs:
   build:
     name: main
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # for final git push
     steps:
     - uses: actions/checkout@v1
     - uses: actions/setup-python@v1
